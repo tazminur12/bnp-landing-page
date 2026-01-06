@@ -24,16 +24,18 @@ export default function Vision() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {/* Card 1 - শিক্ষা ও যুব উন্নয়ন */}
           <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
-            <div className="w-12 h-12 md:w-16 md:h-16 mb-3 md:mb-4 flex items-center justify-center">
+            <div className="w-12 h-12 md:w-16 md:h-16 mb-3 md:mb-4 flex items-center justify-center bg-blue-100 rounded-lg">
               <svg
-                className="w-8 h-8 md:w-12 md:h-12 text-gray-900"
-                fill="currentColor"
+                className="w-8 h-8 md:w-12 md:h-12 text-blue-600"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
                 <path
-                  d="M12 2v20c5.16-1.26 9-6.45 9-12V7l-9-5z"
-                  fill="#fbbf24"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                 />
               </svg>
             </div>
@@ -46,100 +48,126 @@ export default function Vision() {
           </div>
 
           {/* Card 2 - কর্মসংস্থান ও অর্থনৈতিক উন্নয়ন */}
-          <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center">
+          <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <div className="w-12 h-12 md:w-16 md:h-16 mb-3 md:mb-4 flex items-center justify-center bg-green-100 rounded-lg">
               <svg
-                className="w-12 h-12 text-amber-700"
-                fill="currentColor"
+                className="w-8 h-8 md:w-12 md:h-12 text-green-600"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path d="M10 2v2H8v2H6v2H4v2H2v8h2v2h2v2h2v2h2v2h8v-2h2v-2h2v-2h2v-2h2V8h-2V6h-2V4h-2V2H10zm0 2h8v2h2v2h2v8h-2v2h-2v2H8v-2H6v-2H4V8h2V6h2V4zm2 4v2h2v2h2v2h-2v2h-2v2H8v-2H6v-2h2v-2h2V8h2z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
               কর্মসংস্থান ও অর্থনৈতিক উন্নয়ন
             </h3>
-            <p className="text-base text-gray-700 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-700 leading-relaxed">
               স্থানীয় ব্যবসা সহায়তা, উদ্যোক্তা তৈরি ও বেকারত্ব হ্রাস।
             </p>
           </div>
 
           {/* Card 3 - স্বাস্থ্যসেবা ও সামাজিক নিরাপত্তা */}
-          <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center">
+          <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <div className="w-12 h-12 md:w-16 md:h-16 mb-3 md:mb-4 flex items-center justify-center bg-red-100 rounded-lg">
               <svg
-                className="w-12 h-12 text-red-600"
-                fill="currentColor"
+                className="w-8 h-8 md:w-12 md:h-12 text-red-600"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
               স্বাস্থ্যসেবা ও সামাজিক নিরাপত্তা
             </h3>
-            <p className="text-base text-gray-700 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-700 leading-relaxed">
               স্বল্পমূল্যে মানসম্মত চিকিৎসা, বয়স্ক ও অসহায়দের জন্য বিশেষ সেবা।
             </p>
           </div>
 
           {/* Card 4 - বাসস্থান ও অবকাঠামো উন্নয়ন */}
-          <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center">
+          <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <div className="w-12 h-12 md:w-16 md:h-16 mb-3 md:mb-4 flex items-center justify-center bg-amber-100 rounded-lg">
               <svg
-                className="w-12 h-12 text-amber-700"
-                fill="currentColor"
+                className="w-8 h-8 md:w-12 md:h-12 text-amber-600"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path d="M10 20v-6H4v-2h6V4h2v8h8v2h-8v6h-2z" />
                 <path
-                  d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"
-                  fill="#dc2626"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
               বাসস্থান ও অবকাঠামো উন্নয়ন
             </h3>
-            <p className="text-base text-gray-700 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-700 leading-relaxed">
               নিরাপদ বাসস্থান, উন্নত রাস্তা, ড্রেনেজ ও নাগরিক সুবিধা নিশ্চিত করা।
             </p>
           </div>
 
           {/* Card 5 - আইন-শৃঙ্খলা ও নিরাপত্তা */}
-          <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center">
+          <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <div className="w-12 h-12 md:w-16 md:h-16 mb-3 md:mb-4 flex items-center justify-center bg-purple-100 rounded-lg">
               <svg
-                className="w-12 h-12 text-red-600"
-                fill="currentColor"
+                className="w-8 h-8 md:w-12 md:h-12 text-purple-600"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
               আইন-শৃঙ্খলা ও নিরাপত্তা
             </h3>
-            <p className="text-base text-gray-700 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-700 leading-relaxed">
               মাদকমুক্ত সমাজ, নারী ও শিশু নিরাপত্তা এবং শক্তিশালী আইন প্রয়োগ।
             </p>
           </div>
 
           {/* Card 6 - স্বচ্ছ ও দায়িত্বশীল নেতৃত্ব */}
-          <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center">
+          <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <div className="w-12 h-12 md:w-16 md:h-16 mb-3 md:mb-4 flex items-center justify-center bg-indigo-100 rounded-lg">
               <svg
-                className="w-12 h-12 text-blue-600"
-                fill="currentColor"
+                className="w-8 h-8 md:w-12 md:h-12 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h2v2h-2v-2h-2v2h2v2h-2v2h2v-2h2v-2h-2v-2zm-2 4h2v2h-2v-2zm0-8h2v2h-2V7z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
               স্বচ্ছ ও দায়িত্বশীল নেতৃত্ব
             </h3>
-            <p className="text-base text-gray-700 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-700 leading-relaxed">
               দুর্নীতিমুক্ত প্রশাসন ও জনগণের কাছে জবাবদিহিতা নিশ্চিত করা।
             </p>
           </div>

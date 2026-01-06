@@ -13,15 +13,33 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-white">
       <Navbar />
-      <Hero />
-      <PartyIntro />
-      <LeaderProfile />
-      <Vision />
-      <Gallery />
-      <Events />
-      <News />
-      <Support />
-      <CTA />
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="about-party">
+        <PartyIntro />
+      </section>
+      <section id="about-me">
+        <LeaderProfile />
+      </section>
+      <section id="vision">
+        <Vision />
+      </section>
+      <section id="gallery">
+        <Gallery />
+      </section>
+      <section id="events">
+        <Events />
+      </section>
+      <section id="news">
+        <News />
+      </section>
+      <section id="contact">
+        <Support />
+      </section>
+      <section id="join">
+        <CTA />
+      </section>
     </div>
   );
 }

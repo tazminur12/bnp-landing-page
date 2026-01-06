@@ -27,12 +27,12 @@ export default function PartyIntro() {
         {/* Middle Section - Two Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16 items-center">
           {/* Left Side - Image */}
-          <div className="relative w-full h-[200px] md:h-[250px] rounded-2xl overflow-hidden bg-cyan-100">
+          <div className="relative w-full h-[300px] md:h-[400px] lg:h-[450px] rounded-2xl overflow-hidden bg-cyan-100 flex items-center justify-center">
             <Image
               src="/BNP/BNP3.png"
               alt="BNP Leaders"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 

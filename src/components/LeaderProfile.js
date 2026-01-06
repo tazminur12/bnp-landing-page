@@ -136,7 +136,7 @@ export default function LeaderProfile() {
             
             {/* Candidate Name */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-              সালাহউদ্দিন আহমেদ
+              মীর শাহে আলম
             </h2>
             
             {/* Candidate Title */}
@@ -192,7 +192,7 @@ export default function LeaderProfile() {
             {/* Call to Action Button */}
             <div className="pt-2 md:pt-4">
               <Link
-                href="/donate"
+                href="/"
                 className="inline-block bg-green-800 hover:bg-green-900 text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg transition-colors"
               >
                 অনুদান করুন

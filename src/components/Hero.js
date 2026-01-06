@@ -50,13 +50,13 @@ export default function Hero() {
             {/* Call to Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 md:pt-4">
               <Link
-                href="/join"
+                href="/"
                 className="bg-yellow-400 hover:bg-yellow-500 text-green-800 px-6 py-3 md:px-8 md:py-4 rounded-lg font-bold text-base md:text-lg transition-colors text-center"
               >
                 আমাদের সঙ্গে থাকুন
               </Link>
               <Link
-                href="/donate"
+                href="/"
                 className="border-2 border-green-300 hover:border-green-200 text-green-300 hover:text-green-200 bg-transparent px-6 py-3 md:px-8 md:py-4 rounded-lg font-bold text-base md:text-lg transition-colors text-center"
               >
                 অনুদান করুন

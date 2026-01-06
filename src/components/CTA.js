@@ -60,7 +60,7 @@ export default function CTA() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 md:mb-16">
           {/* Volunteer Button */}
           <Link
-            href="/volunteer"
+            href="/"
             className="bg-white hover:bg-gray-100 text-gray-900 border-2 border-gray-300 px-8 py-4 rounded-lg font-bold text-base md:text-lg transition-colors flex items-center gap-3 w-full sm:w-auto justify-center"
           >
             <svg
@@ -81,7 +81,7 @@ export default function CTA() {
 
           {/* Donate Button */}
           <Link
-            href="/donate"
+            href="/"
             className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold text-base md:text-lg transition-colors flex items-center gap-3 w-full sm:w-auto justify-center"
           >
             <svg

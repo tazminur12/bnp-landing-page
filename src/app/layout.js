@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Noto_Sans_Bengali } from "next/font/google";
+import { Geist, Geist_Mono, Hind_Siliguri } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,10 +11,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const notoSansBengali = Noto_Sans_Bengali({
+const hindSiliguri = Hind_Siliguri({
   variable: "--font-bengali",
-  subsets: ["bengali"],
-  weight: ["400", "500", "600", "700"],
+  subsets: ["bengali", "latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="bn">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${notoSansBengali.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${hindSiliguri.variable} antialiased`}
       >
         {children}
       </body>

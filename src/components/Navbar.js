@@ -7,6 +7,15 @@ import { useState } from "react";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <nav className="bg-white w-full sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,10 +31,10 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col min-w-0">
-              <h1 className="text-sm md:text-xl lg:text-2xl font-bold text-black leading-tight truncate">
+              <h1 className="text-base md:text-xl lg:text-2xl font-bold text-black leading-tight truncate">
                 মীর শাহে আলম
               </h1>
-              <p className="text-xs md:text-sm text-black leading-tight hidden sm:block">
+              <p className="text-xs md:text-sm text-black leading-tight">
                 বগুড়া- ২ আসন | জাতীয় সংসদ সদস্য (প্রার্থী)
               </p>
             </div>
@@ -33,61 +42,68 @@ export default function Navbar() {
 
           {/* Middle Section - Navigation Links */}
           <div className="hidden lg:flex items-center gap-6 flex-1 justify-center">
-            <Link
-              href="/"
-              className="text-black hover:text-green-800 transition-colors text-base"
+            <a
+              href="#home"
+              onClick={(e) => handleNavClick(e, "#home")}
+              className="text-black hover:text-green-800 transition-colors text-base cursor-pointer"
             >
               হোম
-            </Link>
-            <Link
-              href="/about-party"
-              className="text-black hover:text-green-800 transition-colors text-base"
+            </a>
+            <a
+              href="#about-party"
+              onClick={(e) => handleNavClick(e, "#about-party")}
+              className="text-black hover:text-green-800 transition-colors text-base cursor-pointer"
             >
               দল সম্পর্কে
-            </Link>
-            <Link
-              href="/about-me"
-              className="text-black hover:text-green-800 transition-colors text-base"
+            </a>
+            <a
+              href="#about-me"
+              onClick={(e) => handleNavClick(e, "#about-me")}
+              className="text-black hover:text-green-800 transition-colors text-base cursor-pointer"
             >
               আমার সম্পর্কে
-            </Link>
-            <Link
-              href="/events"
-              className="text-black hover:text-green-800 transition-colors text-base"
+            </a>
+            <a
+              href="#events"
+              onClick={(e) => handleNavClick(e, "#events")}
+              className="text-black hover:text-green-800 transition-colors text-base cursor-pointer"
             >
               ইভেন্ট
-            </Link>
-            <Link
-              href="/news"
-              className="text-black hover:text-green-800 transition-colors text-base"
+            </a>
+            <a
+              href="#news"
+              onClick={(e) => handleNavClick(e, "#news")}
+              className="text-black hover:text-green-800 transition-colors text-base cursor-pointer"
             >
               সংবাদ
-            </Link>
-            <Link
-              href="/contact"
-              className="text-black hover:text-green-800 transition-colors text-base"
+            </a>
+            <a
+              href="#contact"
+              onClick={(e) => handleNavClick(e, "#contact")}
+              className="text-black hover:text-green-800 transition-colors text-base cursor-pointer"
             >
               যোগাযোগ
-            </Link>
+            </a>
           </div>
 
           {/* Right Section - Join Us Button & Mobile Menu */}
           <div className="flex items-center gap-2 md:gap-4 shrink-0">
-            <Link
-              href="/join"
-              className="hidden sm:block bg-green-800 hover:bg-green-900 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-medium transition-colors text-sm md:text-base"
+            <a
+              href="#join"
+              onClick={(e) => handleNavClick(e, "#join")}
+              className="hidden sm:block bg-green-800 hover:bg-green-900 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-medium transition-colors text-sm md:text-base cursor-pointer"
             >
               আমাদের যুক্ত হোন
-            </Link>
+            </a>
             
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden p-2 text-gray-700 hover:text-green-800"
+              className="lg:hidden w-10 h-10 md:w-12 md:h-12 bg-orange-400 hover:bg-orange-500 rounded-lg flex items-center justify-center transition-colors"
               aria-label="Toggle menu"
             >
               <svg
-                className="w-6 h-6"
+                className="w-5 h-5 md:w-6 md:h-6 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -116,55 +132,55 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col gap-4">
-              <Link
-                href="/"
-                className="text-black hover:text-green-800 transition-colors text-base py-2"
-                onClick={() => setIsMenuOpen(false)}
+              <a
+                href="#home"
+                onClick={(e) => handleNavClick(e, "#home")}
+                className="text-black hover:text-green-800 transition-colors text-base py-2 cursor-pointer"
               >
                 হোম
-              </Link>
-              <Link
-                href="/about-party"
-                className="text-black hover:text-green-800 transition-colors text-base py-2"
-                onClick={() => setIsMenuOpen(false)}
+              </a>
+              <a
+                href="#about-party"
+                onClick={(e) => handleNavClick(e, "#about-party")}
+                className="text-black hover:text-green-800 transition-colors text-base py-2 cursor-pointer"
               >
                 দল সম্পর্কে
-              </Link>
-              <Link
-                href="/about-me"
-                className="text-black hover:text-green-800 transition-colors text-base py-2"
-                onClick={() => setIsMenuOpen(false)}
+              </a>
+              <a
+                href="#about-me"
+                onClick={(e) => handleNavClick(e, "#about-me")}
+                className="text-black hover:text-green-800 transition-colors text-base py-2 cursor-pointer"
               >
                 আমার সম্পর্কে
-              </Link>
-              <Link
-                href="/events"
-                className="text-black hover:text-green-800 transition-colors text-base py-2"
-                onClick={() => setIsMenuOpen(false)}
+              </a>
+              <a
+                href="#events"
+                onClick={(e) => handleNavClick(e, "#events")}
+                className="text-black hover:text-green-800 transition-colors text-base py-2 cursor-pointer"
               >
                 ইভেন্ট
-              </Link>
-              <Link
-                href="/news"
-                className="text-black hover:text-green-800 transition-colors text-base py-2"
-                onClick={() => setIsMenuOpen(false)}
+              </a>
+              <a
+                href="#news"
+                onClick={(e) => handleNavClick(e, "#news")}
+                className="text-black hover:text-green-800 transition-colors text-base py-2 cursor-pointer"
               >
                 সংবাদ
-              </Link>
-              <Link
-                href="/contact"
-                className="text-black hover:text-green-800 transition-colors text-base py-2"
-                onClick={() => setIsMenuOpen(false)}
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => handleNavClick(e, "#contact")}
+                className="text-black hover:text-green-800 transition-colors text-base py-2 cursor-pointer"
               >
                 যোগাযোগ
-              </Link>
-              <Link
-                href="/join"
-                className="bg-green-800 hover:bg-green-900 text-white px-6 py-3 rounded-lg font-medium transition-colors text-base text-center mt-2"
-                onClick={() => setIsMenuOpen(false)}
+              </a>
+              <a
+                href="#join"
+                onClick={(e) => handleNavClick(e, "#join")}
+                className="bg-green-800 hover:bg-green-900 text-white px-6 py-3 rounded-lg font-medium transition-colors text-base text-center mt-2 cursor-pointer"
               >
                 আমাদের যুক্ত হোন
-              </Link>
+              </a>
             </div>
           </div>
         )}
