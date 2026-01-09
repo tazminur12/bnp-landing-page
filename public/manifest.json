@@ -1,0 +1,27 @@
+{
+  "name": "মীর শাহে আলম - বগুড়া-২ আসন | BNP প্রার্থী",
+  "short_name": "মীর শাহে আলম",
+  "description": "মীর শাহে আলম, বগুড়া-২ আসনের জাতীয় সংসদ সদস্য প্রার্থী। বাংলাদেশ জাতীয়তাবাদী দল (বিএনপি) থেকে ধানের শীষ প্রতীকে প্রতিদ্বন্দ্বিতা করছেন।",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#166534",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/Hero/dhaner-shis-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Hero/dhaner-shis-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["politics", "government", "news"],
+  "lang": "bn",
+  "dir": "ltr"
+}
