@@ -7,6 +7,7 @@ import Gallery from "@/components/Gallery";
 import Events from "@/components/Events";
 import News from "@/components/News";
 import Support from "@/components/Support";
+import ProfileFrameCampaign from "@/components/ProfileFrameCampaign";
 import CTA from "@/components/CTA";
 
 export default function Home() {
@@ -33,6 +34,9 @@ export default function Home() {
       </section>
       <section id="news">
         <News />
+      </section>
+      <section id="profile-frame">
+        <ProfileFrameCampaign />
       </section>
       <section id="contact">
         <Support />
